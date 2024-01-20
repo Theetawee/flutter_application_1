@@ -21,6 +21,13 @@ class _HomeScreenState extends State<HomeScreen> {
           strokeAlign: BorderSide.strokeAlignOutside),
       borderRadius: BorderRadius.circular(10.0));
 
+
+  @override
+  void dispose() {
+    valueContorller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
